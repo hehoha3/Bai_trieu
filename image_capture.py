@@ -4,7 +4,7 @@ import time
 import cv2
 
 # Change this to the name of the person you're photographing
-PERSON_NAME = "jaryd"
+PERSON_NAME = "Trieu"
 DATA_DIR = "data"
 DATA_SIZE = 100
 
@@ -24,9 +24,7 @@ def capture_photos(name):
     folder = create_folder(name)
 
     # Initialize the USB camera (using OpenCV)
-    cap = cv2.VideoCapture(
-        0
-    )  # 0 for the default camera, change to 1, 2 if necessary for other USB cameras
+    cap = cv2.VideoCapture(2)
 
     # Check if the camera opened successfully
     if not cap.isOpened():
